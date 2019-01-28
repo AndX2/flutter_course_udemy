@@ -35,6 +35,8 @@ class _AuthPageState extends State<AuthPage> {
     return TextFormField(
       decoration: InputDecoration(
           labelText: 'E-Mail', filled: true, fillColor: Colors.white),
+          //TODO: rm it
+          initialValue: 'hffffg@gt.jg',
       keyboardType: TextInputType.emailAddress,
       validator: (String value) {
         if (value.isEmpty ||

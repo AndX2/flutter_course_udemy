@@ -63,7 +63,7 @@ mixin ProductsModel on ConnectedProductsModel {
       'title': title,
       'description': description,
       'image':
-          'https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG',
+          'https://avatars.mds.yandex.net/get-marketpic/176166/market_KXeb50-5smE2nl1DC2LxOA/orig',
       'price': price,
       'userEmail': _authenticatedUser.email,
       'userId': _authenticatedUser.id
@@ -111,7 +111,7 @@ mixin ProductsModel on ConnectedProductsModel {
       'title': title,
       'description': description,
       'image':
-          'https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG',
+          'https://avatars.mds.yandex.net/get-marketpic/176166/market_KXeb50-5smE2nl1DC2LxOA/orig',
       'price': price,
       'userEmail': selectedProduct.userEmail,
       'userId': selectedProduct.userId
@@ -148,7 +148,7 @@ mixin ProductsModel on ConnectedProductsModel {
     notifyListeners();
     return http
         .delete(
-            'https://fluttercourse-2b24f.firebaseio.com/products/${deletedProductId}.json?auth=${_authenticatedUser.token}')
+            'https://fluttercourse-2b24f.firebaseio.com/products/$deletedProductId.json?auth=${_authenticatedUser.token}')
         .then((http.Response response) {
       _isLoading = false;
       notifyListeners();
